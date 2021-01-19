@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+    <form name="myForm" action="validation.html" onsubmit="return validateForm()" method="post">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="firstname" class="form-control" name="firstName" aria-describedby="firstname" >
+            </div>
+            <div class="mb-3">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="lastname" class="form-control" name="lastName" aria-describedby="lastname">
+            </div>
+            <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="age" class="form-control" name="age" aria-describedby="age">
+            </div> 
+            <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="emailConf" class="form-label">Email Adress confirmation</label>
+            <input type="email" class="form-control" name="emailConf" aria-describedby="emailconf">
+            </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <div class="mb-3">
+            <label for="passwordConf" class="form-label">Password confirmation</label>
+            <input type="password" class="form-control" name="passwordConf">
+            </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" name="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">J'accepte les CGU</label>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Submit">
+        </form>>
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+  
+</html>
